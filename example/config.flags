@@ -15,7 +15,7 @@
 
 --init_motion_identity=true
 
-# for dyna-like
+# for object-centric
 --use_object_odometry_factor=true
 --min_object_observations=5
 --object_centric_point_factor_sigma=0.5
