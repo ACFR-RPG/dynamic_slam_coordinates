@@ -353,7 +353,6 @@ bool saveMatrixAsUpperTriangular(std::ostream& os, const gtsam::Matrix& matrix);
 }  // namespace io
 }  // namespace gtsam
 
-#include "GtsamIO-impl.h"
 #include <boost/algorithm/string/replace.hpp>
 
 #define CONCATENATE_DIRECT(s1, s2) s1##s2
@@ -367,8 +366,10 @@ bool saveMatrixAsUpperTriangular(std::ostream& os, const gtsam::Matrix& matrix);
 // atm...
 #define GTSAM_REGISTER_TYPE_IMPL(tagname, classname, var)                                                              \
   static gtsam::io::RegisterTypeProxy<classname> var(#classname, #tagname);                                            \
-  template <>                                                                                                          \
-  std::string gtsam::io::tag_name<classname>()                                                                         \
+  template <> std::string gtsam::io::tag_name<classname>()                                                            \
   {                                                                                                                    \
     return #tagname;                                                                                                   \
   }
+
+
+#include "GtsamIO-impl.h"
