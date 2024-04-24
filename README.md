@@ -11,6 +11,8 @@
 The offical code used for our paper:
 - [Jesse Morris](https://jessemorris.github.io/), Yiduo Wang, Viorela Ila [*The Importance of Coordinate Frames in Dynamic SLAM*](https://arxiv.org/abs/2312.04031).  IEEE Intl. Conf. on Robotics and Automation (ICRA), 2024.
 
+We kindly ask to cite our paper if you find this work useful:
+
 ```bibtex
 
 @article{morris2023importance,
@@ -21,8 +23,8 @@ The offical code used for our paper:
 }
 
 ```
-
-We kindly ask to cite our paper if you find this platform useful:
+Please view our [project page](https://acfr-rpg.github.io/dynamic_slam_coordinates/
+) for the supplementary video and presentation recorded for ICRA 2024.
 
 
 # 1. Install
@@ -72,7 +74,7 @@ e.g.
 
 ## Configuration and Graph files
 
-As explained in the paper we evalulate this on sequences from the KITTI dataset. The input data used for these experiments can be found at [TODO](). Each sequence is then processed using the front-end described in:
+As explained in the paper we evalulate this on sequences from the KITTI dataset. The input data used for these experiments can be found on [google drive](https://drive.google.com/drive/folders/11ZNYnf8G4Zz79aUptc4lKMnIz_6RMQye?usp=sharing). Each sequence is then processed using the front-end described in:
 
 * <b>VDO-SLAM: A Visual Dynamic Object-aware SLAM System</b> <br> 
 Jun Zhang\*, Mina Henein\*, Robert Mahony and Viorela Ila. 

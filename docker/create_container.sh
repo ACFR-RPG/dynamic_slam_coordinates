@@ -59,7 +59,6 @@ echo "Mounting data folder (local) $LOCAL_DATA_FOLDER -> (container) $CONTAINER_
 
 
 if [ -z "$NVIDIA_SOS" ]; then
-    # Compose the long list of .so files from Nvidia to make X work with seawolf
     # This provides a list of all .so files installed from packages from 'nvidia-''
     NVIDIA_SOS=$(dpkg -l | grep nvidia- | awk '{print $2}' | xargs dpkg-query -L | grep lib | grep .so)
     # This generates --volume /path/to/.so:/path/to/.so lines for every .so
@@ -67,7 +66,6 @@ fi
 for so in $NVIDIA_SOS; do DOCKER_NVIDIA_SO_VOLUMES+="--volume $so:$so "; done
 
 if "$USE_NVIDIA"; then
-    # If executing this script from an unmanned shell (like from seawolf ShellCmd)
     # We can't use "-i"
     if [ -t 1 ]; then
         TERMINAL_FLAGS='-it'
