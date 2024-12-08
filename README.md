@@ -15,11 +15,13 @@ We kindly ask to cite our paper if you find this work useful:
 
 ```bibtex
 
-@article{morris2023importance,
+@article{Morris2023icra,
   title={The Importance of Coordinate Frames in Dynamic SLAM},
-  author={Morris, Jesse and Wang, Yiduo and Ila, Viorela},
-  journal={arXiv preprint arXiv:2312.04031},
-  year={2023}
+  author={Jesse Morris and Yiduo Wang and Viorela Ila},
+  journal={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2023},
+  pages={13755-13761},
+  url={https://api.semanticscholar.org/CorpusID:266044146}
 }
 
 ```
